@@ -1,7 +1,7 @@
 package users
 
-type UserData struct {
-	User     string `json:"user"`
+type LoginRequest struct {
+	Username string `json:"username"`
 	Password string `json:"password"`
 }
 

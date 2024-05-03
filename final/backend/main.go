@@ -1,13 +1,13 @@
 package main
 
 import (
-	"backend/app"
+	"backend/router"
 
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	engine := gin.New()
-	app.MapRoutes(engine)
+	router.MapUrls(engine)
 	engine.Run(":8080")
 }
